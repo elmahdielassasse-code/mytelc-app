@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="747" viewBox="0 0 1120 747" fill="none">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFE56A"/>
+      <stop offset=".48" stop-color="#F6B900"/>
+      <stop offset="1" stop-color="#D89000"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#B90016"/>
+      <stop offset=".55" stop-color="#ED101F"/>
+      <stop offset="1" stop-color="#C30016"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#111111" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#soft-shadow)">
+    <path d="M368 153C498 68 676 67 844 89c85 11 151 33 207 67-73-14-157-16-250 0-151 25-293 75-424 71l-9-74Z" fill="#171719"/>
+    <path d="M375 181c133-81 278-91 449-71 86 10 151 29 211 54-78-7-159-1-249 20-153 36-283 86-413 69l2-72Z" fill="url(#red)"/>
+    <path d="M382 207c139-67 288-80 446-62 80 9 142 25 201 46-79 0-158 11-247 37-145 43-272 82-399 49l-1-70Z" fill="url(#gold)"/>
+    <path d="M819 116c111-7 196 23 254 73-36 45-83 72-145 89" stroke="url(#gold)" stroke-width="14" stroke-linecap="round"/>
+
+    <g stroke="#191919" stroke-width="7" stroke-linejoin="round">
+      <path d="m629 142 110-18 109 18-10 18H638l-9-18Z" fill="#fff"/>
+      <path d="M645 163h187v17H645z" fill="#fff"/>
+      <path d="M655 180h17v91h-17zM692 180h17v91h-17zM769 180h17v91h-17zM806 180h17v91h-17z" fill="#fff"/>
+      <path d="M642 271h192v15H642z" fill="#fff"/>
+      <path d="M625 289h225v14H625z" fill="#fff"/>
+      <path d="M675 138c13-20 27-32 45-39 6-16 13-27 21-33 10 9 16 21 21 36 16 8 28 20 38 36H675Z" fill="#fff"/>
+      <circle cx="741" cy="51" r="6" fill="#fff"/>
+      <circle cx="716" cy="86" r="6" fill="#fff"/>
+      <circle cx="767" cy="86" r="6" fill="#fff"/>
+    </g>
+    <path d="M692 151v-13m27 13v-24m27 24v-34m27 34v-23m27 23v-13" stroke="#D7A118" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#soft-shadow)">
+    <path d="m76 146 207-88 196 61-222 104L76 146Z" fill="#171719" stroke="#080808" stroke-width="10" stroke-linejoin="round"/>
+    <path d="m93 143 191-70 153 46-184 81-160-57Z" fill="#202124"/>
+    <path d="M234 218c69 8 140-3 205-21-20 39-67 66-134 71-63 5-121-9-163-33l92-17Z" fill="#111214" stroke="#080808" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M163 145c-11 20-18 41-18 64 0 14 4 25 12 33" stroke="url(#gold)" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="157" cy="143" r="12" fill="url(#gold)"/>
+    <path d="m152 239 22 2-6 63-11 10-12-10 7-65Z" fill="url(#gold)"/>
+    <path d="m156 239 10 2-5 50-7 6-5-6 7-52Z" fill="#F9D33D"/>
+  </g>
+
+  <text x="179" y="426" font-family="Arial Black, Arial, sans-serif" font-size="190" font-style="italic" font-weight="900" letter-spacing="-13">
+    <tspan fill="#121212">My</tspan><tspan fill="url(#red)">Telc</tspan>
+  </text>
+
+  <g filter="url(#soft-shadow)">
+    <rect x="589" y="439" width="445" height="112" rx="56" fill="#171719" stroke="url(#gold)" stroke-width="12"/>
+    <text x="634" y="518" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-size="73" font-style="italic" font-weight="900" letter-spacing="1">TELC B1</text>
+    <path d="m934 492 23 23 44-53" stroke="url(#gold)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g stroke-linecap="round" filter="url(#soft-shadow)">
+    <path d="M96 592c139 86 304 96 461 62 175-38 330-24 471 13" stroke="#171719" stroke-width="27"/>
+    <path d="M102 617c145 83 300 87 450 53 173-39 327-20 466 24" stroke="url(#red)" stroke-width="23"/>
+    <path d="M112 641c148 77 292 75 438 42 167-38 322-13 455 34" stroke="url(#gold)" stroke-width="20"/>
+  </g>
+
+  <g filter="url(#soft-shadow)" stroke="#171719" stroke-width="11" stroke-linejoin="round">
+    <path d="M315 591c-72-45-148-69-235-69l-17 72c85 5 168 25 252 63l12-66Z" fill="#fff"/>
+    <path d="M315 591c75-48 160-71 254-69l-13 72c-88 3-167 25-253 63l12-66Z" fill="#fff"/>
+    <path d="M315 590c-70-34-140-51-217-52" fill="none" stroke="#D9D9D9" stroke-width="5"/>
+    <path d="M315 590c74-37 153-55 235-55" fill="none" stroke="#D9D9D9" stroke-width="5"/>
+    <path d="M315 590c-61-23-119-34-181-34" fill="none" stroke="url(#gold)" stroke-width="12"/>
+    <path d="M315 590c67-25 133-36 203-38" fill="none" stroke="url(#red)" stroke-width="12"/>
+    <path d="M315 590v69" fill="none" stroke-width="10"/>
+  </g>
+
+  <text x="564" y="711" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="43" font-style="italic" font-weight="800" letter-spacing="2">
+    <tspan fill="#171719">Lernen </tspan><tspan fill="#D99D00">•</tspan><tspan fill="#171719"> Üben </tspan><tspan fill="#D99D00">•</tspan><tspan fill="#171719"> Bestehen</tspan>
+  </text>
+</svg>

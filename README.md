@@ -20,6 +20,16 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## MyTelc AI Assistant
+
+The floating TELC B1 assistant uses the OpenAI Chat Completions API from a server route. Copy `.env.example` to `.env.local`, set `OPENAI_API_KEY` there, and restart the development server. The key stays server-side and must not be added to client code or committed. `OPENAI_MODEL` is optional and defaults to `gpt-4o-mini`.
+
+## Local registrations and admin dashboard
+
+The registration form saves each name, e-mail address, and registration date in the current browser's `localStorage`; it does not store the submitted password or require a server. `/admin` reads and manages those local entries with the password `MyTelc2026`. This is a local convenience feature, not secure authentication: the password is included in client code, and entries are only available in the same browser and device. They are not synced with Supabase or other users' devices.
+
+Tasribat experiences are stored in the publishing browser's `localStorage` and remain available there after refresh. They are not shared between different browsers or devices.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

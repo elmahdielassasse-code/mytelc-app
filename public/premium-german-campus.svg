@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="800" y1="0" x2="800" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCE8EA"/>
+      <stop offset=".62" stop-color="#F4EBDD"/>
+      <stop offset="1" stop-color="#E9DFC9"/>
+    </linearGradient>
+    <linearGradient id="facade" x1="800" y1="230" x2="800" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8DDC9"/>
+      <stop offset="1" stop-color="#C8B99F"/>
+    </linearGradient>
+    <linearGradient id="roof" x1="800" y1="110" x2="800" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#77796F"/>
+      <stop offset="1" stop-color="#4F5856"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#839A9C"/>
+      <stop offset="1" stop-color="#526F75"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="800" y1="690" x2="800" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B9B89A"/>
+      <stop offset="1" stop-color="#8F9D82"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0" cy="0" r="1" gradientTransform="matrix(0 240 -280 0 1260 150)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8DE" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#FFF8DE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1600v1000H0z"/>
+  <path fill="url(#sun)" d="M0 0h1600v1000H0z"/>
+  <g fill="#fff" fill-opacity=".26">
+    <path d="M95 210c28-42 91-50 128-17 42-16 87 8 88 47H71c-1-16 8-27 24-30Zm995-86c22-32 69-38 97-13 32-12 66 6 67 35h-163c-1-10 0-17-1-22Z"/>
+  </g>
+  <path fill="#C5C9B7" d="M0 662c188-54 310-20 465-9 213 15 325-55 514-38 204 18 384 68 621 11v374H0V662Z"/>
+  <g opacity=".76">
+    <path fill="#8D9A84" d="M24 541c35-137 178-166 222-31 45 11 65 67 74 144H5c2-42 8-83 19-113Z"/>
+    <path fill="#758B7D" d="M1247 490c44-139 177-165 231-29 48 10 80 74 92 193h-341c0-66 6-121 18-164Z"/>
+    <path fill="#A2AA91" d="M137 399c28-78 93-116 151-62 40 37 44 103 34 174H91c4-49 18-84 46-112Z"/>
+    <path fill="#8A9B88" d="M1357 373c34-84 102-115 156-52 40 47 43 118 26 190h-230c3-62 18-108 48-138Z"/>
+  </g>
+  <g>
+    <path fill="url(#facade)" d="M315 324h970v414H315z"/>
+    <path fill="#D8CAB3" d="M258 332h1084v49H258z"/>
+    <path fill="url(#roof)" d="m250 333 550-239 550 239H250Z"/>
+    <path fill="#59615D" d="M724 129h152v-66h-27V31h-98v32h-27v66Z"/>
+    <path fill="#D8CAB3" d="M782 29h36v-21h-36z"/>
+    <path fill="#B5A58D" d="M323 381h954v17H323z"/>
+    <path fill="#D0C2AA" d="M286 726h1028v39H286z"/>
+    <path fill="#B5A58D" d="M248 761h1104v30H248z"/>
+    <path fill="#ECE2D1" d="M662 264h276v474H662z"/>
+    <path fill="#C9B99F" d="M643 251h314v25H643z"/>
+    <path fill="#E9DFC9" d="M688 282h224v456H688z"/>
+    <path fill="#C5B59B" d="M758 284h84v454h-84z"/>
+    <path fill="#D9CBB5" d="M315 738h970v18H315z"/>
+  </g>
+  <g fill="#667678">
+    <path d="M474 190h18v149h-18zm122-28h18v177h-18zm492 0h18v177h-18zm122 28h18v149h-18z"/>
+  </g>
+  <g fill="url(#glass)" stroke="#BDAE96" stroke-width="12">
+    <path d="M366 413h111v116H366zM506 413h111v116H506zM984 413h111v116H984zM1124 413h111v116h-111z"/>
+    <path d="M366 566h111v116H366zM506 566h111v116H506zM984 566h111v116H984zM1124 566h111v116h-111z"/>
+    <path d="M698 326h80v112h-80zM822 326h80v112h-80zM698 474h80v112h-80zM822 474h80v112h-80z"/>
+  </g>
+  <g fill="#F4EBDD" opacity=".7">
+    <path d="M378 425h88v7h-88zm140 0h88v7h-88zm478 0h88v7h-88zm140 0h88v7h-88z"/>
+    <path d="M710 338h56v7h-56zm124 0h56v7h-56z"/>
+  </g>
+  <g fill="#D7C8B0">
+    <path d="M728 625h144v113H728z"/>
+    <path d="M697 610h206v18H697z"/>
+  </g>
+  <path fill="url(#ground)" d="M0 790c245-37 445-17 650 11 237 33 514-51 950-1v200H0V790Z"/>
+  <path fill="#D8CFB8" fill-opacity=".88" d="M666 791h268l377 209H290l376-209Z"/>
+  <path stroke="#F5EBDD" stroke-opacity=".62" stroke-width="6" d="m800 806-8 42m-27 58-19 38m111-138 8 42m27 58 19 38"/>
+  <g fill="#728A79" opacity=".86">
+    <circle cx="191" cy="642" r="65"/><circle cx="1431" cy="638" r="72"/>
+    <circle cx="1372" cy="660" r="43"/><circle cx="241" cy="666" r="42"/>
+  </g>
+</svg>
