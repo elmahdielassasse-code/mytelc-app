@@ -154,9 +154,10 @@ const studyNavigation = [
 ];
 
 const examMenuLinks = [
-  { href: "#lesen", title: "Lesen", description: "Compréhension écrite", icon: "book" as const, color: "text-blue-600" },
-  { href: "#hoeren", title: "Hören", description: "Compréhension orale", icon: "headphones" as const, color: "text-violet-600" },
-  { href: "#schreiben", title: "Schreiben", description: "Expression écrite", icon: "pen" as const, color: "text-amber-600" },
+  { href: "/exams/lesen", title: "Lesen", description: "Compréhension écrite", icon: "book" as const, color: "text-blue-600" },
+  { href: "/exams/horen", title: "Hören", description: "Compréhension orale", icon: "headphones" as const, color: "text-violet-600" },
+  { href: "/exams/schreiben", title: "Schreiben", description: "Expression écrite", icon: "pen" as const, color: "text-amber-600" },
+  { href: "/exams/sprechen", title: "Sprechen", description: "Expression orale", icon: "document" as const, color: "text-emerald-600" },
 ];
 
 const WHATSAPP_LINK =
@@ -499,14 +500,14 @@ export default function Home() {
               </a>
               <div ref={examDropdownRef} className="relative flex items-center">
                 <div className="exam-navigation-button group flex min-h-11 items-center overflow-hidden rounded-full border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:border-[#D4AF37]/60 hover:shadow-[0_5px_14px_rgba(180,135,32,0.12)]">
-                  <a
-                    href="#uebungen"
+                  <Link
+                    href="/exams"
                     onClick={() => setExamMenuOpen(false)}
                     className="inline-flex h-11 items-center gap-2 px-4 text-sm font-bold text-slate-700 transition-colors group-hover:text-[#A77C16]"
                   >
                     <ProfileIcon name="document" className="h-4 w-4" />
                     Prüfungen
-                  </a>
+                  </Link>
                   <button
                     type="button"
                     aria-label="Prüfungen-Menü öffnen"
@@ -525,7 +526,7 @@ export default function Home() {
                     className="absolute left-0 top-full z-[80] mt-2 w-72 rounded-2xl border border-slate-100 bg-white p-2 shadow-[0_18px_48px_rgba(15,23,42,0.18)]"
                   >
                     {examMenuLinks.map((item) => (
-                      <a
+                      <Link
                         key={item.href}
                         role="menuitem"
                         href={item.href}
@@ -537,7 +538,7 @@ export default function Home() {
                           <span className="block text-sm font-bold text-[#0A2540]">{item.title}</span>
                           <span className="mt-0.5 block text-xs text-slate-500">{item.description}</span>
                         </span>
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 )}
@@ -723,14 +724,14 @@ export default function Home() {
                 <ul className="space-y-2.5">
                   {[
                     { href: "#home", label: "Accueil", arabic: "الرئيسية", icon: "home" as const, color: "text-blue-600", iconBackground: "bg-blue-50", badge: undefined },
-                    { href: "#uebungen", label: "Exercices", arabic: "التمارين", icon: "book" as const, color: "text-emerald-600", iconBackground: "bg-emerald-50", badge: undefined },
+                    { href: "/exams", label: "Exercices", arabic: "التمارين", icon: "book" as const, color: "text-emerald-600", iconBackground: "bg-emerald-50", badge: undefined },
                     { href: "#packs", label: "Packs", arabic: "الباقات", icon: "diamond" as const, color: "text-amber-600", iconBackground: "bg-amber-50", badge: "OFFRE" },
                     { href: "/tasribat", label: "Tasribat", arabic: "التسريبات", icon: "document" as const, color: "text-rose-600", iconBackground: "bg-rose-50", badge: "NEW" },
                     { href: "#contact", label: "Contact", arabic: "تواصل معنا", icon: "phone" as const, color: "text-violet-600", iconBackground: "bg-violet-50", badge: undefined },
                     { href: "#about", label: "À propos", arabic: "من نحن", icon: "info" as const, color: "text-slate-600", iconBackground: "bg-slate-100", badge: undefined },
                   ].map((item) => (
                     <li key={item.href}>
-                      <a
+                      <Link
                         href={item.href}
                         onClick={() => setMobileMenuOpen(false)}
                         className="group flex items-center gap-3 rounded-2xl border border-slate-100 bg-white/85 px-3.5 py-3 shadow-[0_4px_14px_rgba(15,23,42,0.035)] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#D4AF37]/45 hover:bg-[#FFFCF5] hover:shadow-[0_10px_22px_rgba(180,135,32,0.11)]"
@@ -747,7 +748,7 @@ export default function Home() {
                             {item.badge}
                           </span>
                         )}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                   <li className="pt-1">
@@ -812,8 +813,8 @@ export default function Home() {
               <p>رحلتك نحو شهادة TELC B1 تبدأ من هنا!</p>
             </div>
             <div className="mt-8 mb-7 grid max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3">
-              <a
-                href="#uebungen"
+              <Link
+                href="/exams"
                 dir="rtl"
                 className="flex min-h-[220px] flex-col items-start rounded-2xl bg-black p-5 text-right text-white shadow-[0_12px_30px_rgba(15,23,42,0.12)] transition hover:-translate-y-1 hover:bg-slate-900"
               >
@@ -821,7 +822,7 @@ export default function Home() {
                 <span className="mt-4 text-lg font-black">اكتشف التمارين</span>
                 <span className="mt-2 text-sm leading-6 text-white/80">شوف مواضيع B1 كاملة</span>
                 <span className="mt-auto rounded-xl bg-white/15 px-4 py-2 text-sm font-bold">ابدأ الآن</span>
-              </a>
+              </Link>
               <a
                 href="#packs"
                 dir="rtl"
@@ -851,8 +852,8 @@ export default function Home() {
               </a>
             </div>
             <div className="mt-9 max-w-2xl">
-              <a
-                href="/packs#pack-24h"
+              <Link
+                href="/exams"
                 dir="ltr"
                 className="group relative flex w-full items-center justify-center rounded-2xl border border-slate-200 bg-white px-12 py-5 text-[#0A2540] shadow-[0_8px_24px_rgba(15,23,42,0.06)] transition hover:-translate-y-0.5 hover:shadow-[0_16px_36px_rgba(15,23,42,0.12)] sm:px-14"
               >
@@ -870,7 +871,7 @@ export default function Home() {
                   </span>
                 </span>
                 <span aria-hidden="true" className="absolute right-5 shrink-0 text-xl font-medium text-slate-400 transition-transform group-hover:translate-x-0.5 sm:right-7">→</span>
-              </a>
+              </Link>
               <p dir="auto" className="mt-3 text-center text-sm font-semibold text-slate-500">
                 بدون بطاقة بنكية - Ohne Kreditkarte
               </p>

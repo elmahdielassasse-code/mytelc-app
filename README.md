@@ -30,6 +30,10 @@ The registration form saves each name, e-mail address, and registration date in 
 
 Tasribat experiences are stored in the publishing browser's `localStorage` and remain available there after refresh. They are not shared between different browsers or devices.
 
+## Exam practice routes
+
+`/exams` links to the Lesen, Hören, Schreiben, and Sprechen pages under `/exams/lesen`, `/exams/horen`, `/exams/schreiben`, and `/exams/sprechen`. Each category currently lists three clearly marked upcoming exam entries; exercise materials can be added when they are available.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
